@@ -6,6 +6,11 @@
   "keywords": ["react native navigation saga", "react native navigation redux", "react native navigation v2 saga", "react native navigation v2 redux"],
   "author": "Alexey Pikulik",
   "license": "ISC",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dalamar/react-native-navigation-redux.git"
+  },
   "dependencies": {
     "react-native-navigation": "^2.0.2470",
     "redux": "^4.0.0",
