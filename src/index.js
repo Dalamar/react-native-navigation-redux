@@ -1,4 +1,4 @@
-import * as navigationSaga from './sagas';
+import navigationSaga from './sagas';
 export { RNNR } from './RNNR';
 export {
   changeAppRoot,
