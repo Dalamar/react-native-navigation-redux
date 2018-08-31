@@ -1,3 +1,4 @@
+import * as navigationSaga from './sagas';
 export { RNNR } from './RNNR';
 export {
   changeAppRoot,
@@ -9,5 +10,4 @@ export {
 } from './actions';
 
 export { navigation } from './reducer';
-export navigationSaga from './sagas';
-
+export { navigationSaga }
