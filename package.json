@@ -1,0 +1,14 @@
+{
+  "name": "react-native-navigation-redux",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "keywords": ["react native navigation saga", "react native navigation redux", "react native navigation v2 saga", "react native navigation v2 redux"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-native-navigation": "^2.0.2470",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0"
+  }
+}
