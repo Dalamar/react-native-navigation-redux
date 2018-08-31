@@ -15,14 +15,14 @@ export function setVisibleComponent(componentId, componentName) {
   };
 }
 
-export function push(componentId, layout) {
+export function push(layout) {
   return {
     type: ActionTypes.PUSH,
     layout,
   };
 }
 
-export function pop(componentId, layout = {}) {
+export function pop(layout = {}) {
   return {
     type: ActionTypes.POP,
     layout,
@@ -36,7 +36,7 @@ export function showModal(layout) {
   };
 }
 
-export function hideModal(componentId, layout) {
+export function hideModal(layout) {
   return {
     type: ActionTypes.MODAL_HIDE,
     layout,
