@@ -37,3 +37,18 @@ this.props.dispatch(push({
   },
 }))
 ```
+
+You can also write your own saga functions to handle navigation actions:
+```
+const getComponentId = state => state.navigation.componentId;
+
+function* handlePush(action: push) {
+  const componentId = yield select(getComponentId);
+  yield Navigation.push(componentId, action.layout);
+  // Or do what you ever want to do on navigation PUSH action.
+}
+
+export default [
+  takeLatest(ActionTypes.PUSH, handlePush),
+];
+```
