@@ -1,3 +1,4 @@
+export { RNNR } from './RNNR';
 export {
   changeAppRoot,
   setVisibleComponent,
