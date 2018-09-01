@@ -29,8 +29,12 @@ export const navigation: Reducer<IState, ActionsAll> = (
       };
     case ActionTypes.PUSH:
     case ActionTypes.POP:
+    case ActionTypes.POP_TO:
+    case ActionTypes.POP_TO_ROOT:
+    case ActionTypes.SET_STACK_ROOT:
     case ActionTypes.MODAL_SHOW:
-    case ActionTypes.MODAL_HIDE:
+    case ActionTypes.MODAL_DISMISS:
+    case ActionTypes.MODAL_DISMISS_ALL:
       return {
         ...state,
         screen: action.layout,
