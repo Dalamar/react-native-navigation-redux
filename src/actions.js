@@ -42,7 +42,7 @@ export function popToRoot() {
 
 export function setStackRoot(params = {}) {
   return {
-    type: ActionTypes.POP_TO_ROOT,
+    type: ActionTypes.SET_STACK_ROOT,
     params,
   };
 }
