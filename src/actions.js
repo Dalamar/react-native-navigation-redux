@@ -15,31 +15,54 @@ export function setVisibleComponent(componentId, componentName) {
   };
 }
 
-export function push(layout) {
+export function push(layout = {}) {
   return {
     type: ActionTypes.PUSH,
     layout,
   };
 }
 
-export function pop(layout = {}) {
+export function pop() {
   return {
     type: ActionTypes.POP,
-    layout,
   };
 }
 
-export function showModal(layout) {
+export function popTo() {
+  return {
+    type: ActionTypes.POP_TO,
+  };
+}
+
+export function popToRoot() {
+  return {
+    type: ActionTypes.POP_TO_ROOT,
+  };
+}
+
+export function setStackRoot(params = {}) {
+  return {
+    type: ActionTypes.POP_TO_ROOT,
+    params,
+  };
+}
+
+export function showModal(layout = {}) {
   return {
     type: ActionTypes.MODAL_SHOW,
     layout,
   };
 }
 
-export function hideModal(layout) {
+export function dismissModal() {
   return {
-    type: ActionTypes.MODAL_HIDE,
-    layout,
+    type: ActionTypes.MODAL_DISMISS,
+  };
+}
+
+export function dismissAllModals() {
+  return {
+    type: ActionTypes.MODAL_DISMISS_ALL,
   };
 }
 
@@ -48,5 +71,9 @@ export type ActionsAll =
   | setVisibleComponent
   | push
   | pop
+  | popTo
+  | popToRoot
+  | setStackRoot
   | showModal
-  | hideModal
+  | dismissModal
+  | dismissAllModals
