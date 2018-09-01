@@ -58,7 +58,7 @@ function* handleDismissModal(action: dismissModal) {
   yield call([Navigation, Navigation.dismissModal], componentId)
 }
 
-function* handleDismissAllModals(action: dismissAllModals()) {
+function* handleDismissAllModals(action: dismissAllModals) {
   yield call([Navigation, Navigation.dismissAllModals])
 }
 
