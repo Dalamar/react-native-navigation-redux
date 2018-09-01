@@ -1,5 +1,23 @@
 # react-native-navigation-redux
-Missing Redux feature for awesome Wix React Native Navigation
+Missing Redux feature for awesome Wix React Native Navigation V2
+
+The main goal of this package is to make it possible to navigate outside of React Component, for instance from within sagas.
+
+Like this:
+
+```
+function* handleSomeCoolAction(action: someCoolAction) {
+  yield put(push({
+    component: {
+      name: 'screens.SomeCoolScreen',
+    },
+  }))
+}
+
+export default [
+  takeLatest(ActionTypes.SOME_COOL_ACTION, handleSomeCoolAction),
+];
+```
 
 # Installation
 ## Yarn
