@@ -5,8 +5,12 @@ export {
   setVisibleComponent,
   push,
   pop,
+  popTo,
+  popToRoot,
+  setStackRoot,
   showModal,
-  hideModal,
+  dismissModal,
+  dismissAllModals
 } from './actions';
 
 export { navigation } from './reducer';
