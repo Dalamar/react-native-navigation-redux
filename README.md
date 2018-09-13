@@ -37,6 +37,16 @@ import { RNNR } from 'react-native-navigation-redux'
 new RNNR(new App(), store);
 ```
 
+Sometimes you might want to exclude some components from being exposed as currently visible, 
+for instance custom Top Bar Components, as obviously there is no way to navigate within such components.
+
+To do that, simply pass an array of component names (registered screens) that you want to exclude: 
+```
+const excludedComponents = ['TopBarComponent'];
+
+new RNNR(new App(), store, excludedComponents);
+```
+
 ## Connect Reducer
 In your reducers builder file:
 

@@ -1,6 +1,6 @@
 {
   "name": "react-native-navigation-redux",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Missing Redux feature for awesome Wix React Native Navigation V2",
   "main": "src/index.js",
   "keywords": ["react native navigation saga", "react native navigation redux", "react native navigation v2 saga", "react native navigation v2 redux"],
