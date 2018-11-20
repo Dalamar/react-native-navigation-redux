@@ -1,6 +1,7 @@
 export const ActionTypes = {
   ROOT_CHANGED: '[Navigation]::ROOT_CHANGED',
   SET_VISIBLE_COMPONENT: '[Navigation]::SET_VISIBLE_COMPONENT',
+  SET_VISIBLE_PREVIOUS_COMPONENT: '[Navigation]::SET_VISIBLE_PREVIOUS_COMPONENT',
   PUSH: '[Navigation]::PUSH',
   POP: '[Navigation]::POP',
   POP_TO: '[Navigation]::POP_TO',

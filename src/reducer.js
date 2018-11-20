@@ -26,6 +26,14 @@ export const navigation: Reducer<IState, ActionsAll> = (
         ...state,
         componentId: action.componentId,
         componentName: action.componentName,
+        prevComponentId: state.componentId,
+        prevComponentName: state.componentName,
+      };
+    case ActionTypes.SET_VISIBLE_PREVIOUS_COMPONENT:
+      return {
+        ...state,
+        componentId: state.prevComponentId,
+        componentName: state.prevComponentName,
       };
     case ActionTypes.PUSH:
     case ActionTypes.POP:

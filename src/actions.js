@@ -15,6 +15,12 @@ export function setVisibleComponent(componentId, componentName) {
   };
 }
 
+export function setVisiblePreviousComponent() {
+  return {
+    type: ActionTypes.SET_VISIBLE_PREVIOUS_COMPONENT,
+  };
+}
+
 export function push(layout = {}) {
   return {
     type: ActionTypes.PUSH,
@@ -69,6 +75,7 @@ export function dismissAllModals() {
 export type ActionsAll =
   | changeAppRoot
   | setVisibleComponent
+  | setVisiblePreviousComponent
   | push
   | pop
   | popTo
