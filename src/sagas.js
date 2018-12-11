@@ -41,7 +41,11 @@ function* handlePopTo(action: popTo) {
 
 function* handlePopToRoot(action: popToRoot) {
   const componentId = yield select(getComponentId);
-  yield call([Navigation, Navigation.popToRoot], componentId)
+  try {
+    yield call([Navigation, Navigation.popToRoot], componentId)
+  } catch (e) {
+    // assuming nothing to pop
+  }
 }
 
 function* handleSetStackRoot(action: setStackRoot) {
