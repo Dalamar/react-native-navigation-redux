@@ -10,4 +10,5 @@ export const ActionTypes = {
   MODAL_SHOW: '[Navigation]::MODAL_SHOW',
   MODAL_DISMISS: '[Navigation]::MODAL_DISMISS',
   MODAL_DISMISS_ALL: '[Navigation]::MODAL_DISMISS_ALL',
+  SWITCH_TAB_TO_INDEX: '[Navigation]::SWITCH_TAB_TO_INDEX',
 };

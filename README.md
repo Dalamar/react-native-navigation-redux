@@ -80,3 +80,18 @@ export default [
   takeLatest(ActionTypes.PUSH, handlePush),
 ];
 ```
+
+# Switch active tab programmatically
+Assuming that you have defined your BottomTabsId as described in the RNN [documentation](https://wix.github.io/react-native-navigation/#/docs/layout-types?id=selecting-tabs-programmatically)
+
+```
+const bottomTabs = {
+     id: 'BottomTabsId', <--- here
+     children: [...
+ ```
+ 
+ All you need to switch tab using this library is simply dispatch switchTabToIndex action
+ 
+ ```javascript
+dispatch(switchTabToIndex('BottomTabsId', 2));
+``` 

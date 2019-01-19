@@ -66,6 +66,14 @@ function* handleDismissAllModals(action: dismissAllModals) {
   yield call([Navigation, Navigation.dismissAllModals])
 }
 
+function* handleSwitchTabToIndex(action: switchTabToIndex) {
+  yield call([Navigation, Navigation.mergeOptions], action.bottomTabsId, {
+    bottomTabs: {
+      currentTabIndex: action.index
+    }
+  })
+}
+
 export default [
   takeLatest(ActionTypes.ROOT_CHANGED, handleRootChanged),
   takeLatest(ActionTypes.PUSH, handlePush),
@@ -76,4 +84,5 @@ export default [
   takeLatest(ActionTypes.MODAL_SHOW, handleShowModal),
   takeLatest(ActionTypes.MODAL_DISMISS, handleDismissModal),
   takeLatest(ActionTypes.MODAL_DISMISS_ALL, handleDismissAllModals),
+  takeLatest(ActionTypes.SWITCH_TAB_TO_INDEX, handleSwitchTabToIndex),
 ];

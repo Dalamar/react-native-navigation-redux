@@ -72,6 +72,14 @@ export function dismissAllModals() {
   };
 }
 
+export function switchTabToIndex(bottomTabsId, index) {
+  return {
+    type: ActionTypes.SWITCH_TAB_TO_INDEX,
+    bottomTabsId,
+    index,
+  };
+}
+
 export type ActionsAll =
   | changeAppRoot
   | setVisibleComponent
@@ -84,3 +92,4 @@ export type ActionsAll =
   | showModal
   | dismissModal
   | dismissAllModals
+  | switchTabToIndex

@@ -10,7 +10,8 @@ export {
   setStackRoot,
   showModal,
   dismissModal,
-  dismissAllModals
+  dismissAllModals,
+  switchTabToIndex
 } from './actions';
 
 export { navigation } from './reducer';
